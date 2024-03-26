@@ -66,7 +66,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
    ```
       TypeScript's type checking, which is pointing out that the comparison in the else if block is logically impossible because if value is not equal to "a", it must be "b" according to the ternary expression that defines value.
 
-3. Types for Tooling :
+3. **Types for Tooling**
     
    In TypeScript, the type-checker has the capability to verify if we're accessing the correct properties on variables and other objects. With this knowledge, it can also offer suggestions about which properties you might intend to use.
 
@@ -77,7 +77,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
 
    TypeScript takes tooling seriously.An editor that supports TypeScript can deliver “quick fixes” to automatically fix errors, refactoring to easily re-organize code, and useful navigation features for jumping to definitions of a variable, or finding all references to a given variable. All of this is built on top of the type-checker and is fully cross-platform, so it’s likely that our editor has TypeScript support available.
 
-4. tsc- How to install typscript?
+4. **tsc- How to install typscript?**
     
  -    ```bash
        npm install -g typescript
@@ -110,3 +110,66 @@ TypeScript is an open-source programming language developed and maintained by Mi
   ```
   TypeScript is telling us we forgot to pass an argument to the greet function.
 
+5. **Explicit Types**
+    When we use explicit typing, we are telling TS exactly what type we expect the variable to be and TS will take that type only.
+
+    ```bash
+       let myName:string;
+           myName = 'tiger';
+   ```
+   The above variable will only take string type. If we give value as number we will see error.
+
+   ```bash
+      function greet(name: string, age: number){
+      console.log(`Hello ${name}, your age  is ${age}`);
+      }
+      greet('farhath','apple');
+   ```
+   Error: "Argument of type 'string' is not assignable to parameter of type 'number'". Here the second argument should pass with type of number as we define it as number type.
+
+6. **Implicit Type** 
+   It infer the type of variable bases on its initialization value.
+   ```bash
+    let myNumber = 42;
+   ```
+   In this case, TS refers that myNumber is of type number because of it is initialized with value 42 which is number.
+   But it can sometimes lead to unexpected type errors if the inferred type is not what intended.
+
+7. **Erased Types**
+    An "erased type" typically refers to a situation where type information is intentionally removed or ignored during compilation or runtime. 
+
+    ```bash
+      function greet(name: string, age: number){
+      console.log(`Hello ${name}, your age  is ${age}`);
+      }
+      greet('farhath', 23);
+    ```
+
+    When we compile with tsc to output js
+    ```bash
+               function greet(name, age) {
+            console.log(`Hello ${name}, your age  is ${age}`);
+         }
+         greet('farhath', 23);
+    ```
+   we can see that name and age parameters no longer have type annotations(:);
+
+
+8. **Strictness**
+      
+   TypeScript, "strictness" primarily relates to the level of type checking and adherence to coding conventions enforced by the TypeScript compiler.
+
+   TypeScript offers several compiler options that control strictness. These options enable developers to specify how strictly they want TypeScript to enforce type safety and coding practices
+   ```bash
+   "strict": true
+   ```
+   We can write this in tsconfig.json file.By this we can toggles them all on simultaneously, but we can opt out of them individually. The two biggest ones we should know about are noImplicitAny and strictNullChecks.
+
+   i. **noImplicitAny**
+     This option flags any variable with an implicit any type, requiring developers to explicitly declare the type of all variables. This promotes stronger type safety and prevents unintended behavior caused by the any type.
+
+   ii. **strictNullChecks**
+      When enabled, TypeScript performs strict null checks to prevent null or undefined values from being assigned to variables unless explicitly specified. This helps eliminate null reference errors at runtime.
+
+   iii. **alwaysStrict**
+      Enabling this flag ensures that TypeScript emits strict mode directives ('use strict';) in all emitted JavaScript files, promoting better interoperability with modern JavaScript environments.
