@@ -72,16 +72,15 @@ TypeScript is an open-source programming language developed and maintained by Mi
 
    This aspect allows TypeScript to be utilized for code editing purposes as well. The fundamental type-checker can provide real-time error messages and code completion suggestions as you type in your code editor. 
 
-   ```bash
+  
       ![alt text](image.png)
-   ```
 
    TypeScript takes tooling seriously.An editor that supports TypeScript can deliver “quick fixes” to automatically fix errors, refactoring to easily re-organize code, and useful navigation features for jumping to definitions of a variable, or finding all references to a given variable. All of this is built on top of the type-checker and is fully cross-platform, so it’s likely that our editor has TypeScript support available.
 
 4. tsc- How to install typscript?
     
  -    ```bash
-     npm install -g typescript
+       npm install -g typescript
       ```
 
 - Now let’s move to an empty folder and try writing a sample TypeScript program: hello.ts:
@@ -100,10 +99,9 @@ TypeScript is an open-source programming language developed and maintained by Mi
 - What if we get errors how it look.Now lets rewrite the above code
   
   ```bash
-         function greet(name: string, age: number){
-         console.log(`Hello ${name}, your age  is ${age}`);
+      function greet(name: string, age: number){
+      console.log(`Hello ${name}, your age  is ${age}`);
       }
-
       greet('farhath');
   ```
   If we run tsc hello.ts again, notice that we get an error on the command line!
