@@ -196,13 +196,9 @@ JavaScript has three very commonly used primitives: string, number, and boolean.
 - **number** is for numbers like 42. JavaScript does not have a special runtime value for integers, so there’s no equivalent to int or float - everything is simply number.
 - **boolean** is for the two values true and false.
 
-### 2.non-primitive data types
+### 2.Array
 
-Non-primitive data types can hold more collections of complex values. 
-
-- #### Array
-  
-  An array is a special type of data type which can store multiple values of different data types sequentially using a special syntax. TypeScript supports arrays, similar to JavaScript. There are two ways to declare an array
+An array is a Non-primitive data types which can hold more collections of complex values.An array is a special type of data type which can store multiple values of different data types sequentially using a special syntax. TypeScript supports arrays, similar to JavaScript. There are two ways to declare an array
 
   i.Using square brackets. This method is similar to how you would declare arrays in JavaScript.
 
@@ -234,7 +230,7 @@ Non-primitive data types can hold more collections of complex values.
   console.log(arr);
   ```
 
-  MultiTypes arrays
+  **MultiTypes arrays**
 
   ```
    let values: (string | number)[] = ['Apple', 2, 'Orange', 3, 4, 'Banana']; 
@@ -301,3 +297,31 @@ Examples:
       // Convert the array to a string
       console.log(fruits4.toString()); // Output: 'Apple,Orange,Banana'
  ```
+
+### 2. Any
+
+Represents any kind of value, and is useful when we don't want to give a specific type.
+
+```
+   let anyType: any;
+   anyType = "Not sure of which type";
+   anyType = 3;
+   console.log(anyType);
+```
+
+### 3. Type Annotations on Variables
+
+When you declare a variable using const, var, or let, we can optionally add a type annotation to explicitly specify the type of the variable
+
+```
+   let type:'string'
+   type='tiger'
+```
+Here we are initializing a type as string so we need to give value in string format only. If we give value of other type then we can see error.
+
+TypeScript tries to automatically infer the types in your code. For example, the type of a variable is inferred based on the type of its initializer
+
+```
+  let type = 'tiger';
+  // No type annotation needed -- 'type' inferred as type 'string'
+```

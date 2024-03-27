@@ -34,3 +34,8 @@ console.log(fruits4.indexOf('Banana'));
 console.log(fruits4.slice(1));
 // Convert the array to a string
 console.log(fruits4.toString());
+//Any
+var anyType;
+anyType = "Not sure of which type";
+anyType = 3;
+console.log(anyType);
