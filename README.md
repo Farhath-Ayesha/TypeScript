@@ -17,14 +17,15 @@ TypeScript is an open-source programming language developed and maintained by Mi
 
 - TypeScript is nothing but JavaScript and some additional features i.e. ES6 features. It may not be supported in your target browser but the TypeScript compiler can compile the .ts files into ES3, ES4, and ES5 also. 
 
-## The Basics:
+# The Basics
 
-1. **Static type-checking:** 
+### 1. Static type-checking:
+   
     Static types systems describe the shapes and behaviors of what our values will be when we run our programs. A type-checker like TypeScript uses that information and tells us when things might be going wrong.
 
    ```
-            const flower = 'rose'
-            flower(); 
+         const flower = 'rose'
+         flower(); 
    ```
    from the above code we may get error before we try to run the code as "This expression is not callable.Type 'String' has no call signatures." 
 
@@ -44,7 +45,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
    here we may get error as Property 'fullName' does not exist on type '{ name: string; age: number; }'.
    In TypeScript, the code produces an error about fullName not being defined
 
-   ii. Typos:
+   ii. **Typos:**
     ```bash
             const myFirstName= 'farhath';
       const output = myFirstName.tolowercase();
@@ -52,7 +53,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
    ```
    error could me "Property 'tolowerCase' does not exist on type '"farhath"'".
 
-   iii.uncalled functions:
+   iii.**uncalled functions:**
    ```bash
             function myAge(){
          return Math.random < 0.5;
@@ -61,7 +62,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
    ```
    Operator '<' cannot be applied to types '() => number' and 'number'. It meant to be Math.random()
 
-   iv.basic logic errors:
+   iv.**basic logic errors:**
     ```bash
       const value = Math.random() < 0.5 ? "a" : "b";
       if (value !== "a") {
@@ -87,7 +88,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
 4. **tsc- How to install typscript?**
     
  -    ```bash
-       npm install -g typescript
+      npm install -g typescript
       ```
 
 - Now let’s move to an empty folder and try writing a sample TypeScript program: hello.ts:
@@ -101,7 +102,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
 
 - As we can see nothing had happen. It means there is no errors.so we didn’t get any output in our console since there was nothing to report.
   But if we check we got one new file called "hello.js". That's the output when we run this command. As it Transforms it into a plain JavaScript file. and the code is also same.
-  The compiler tries to emit clean readable code that looks like something a person would write. While that’s not always so easy, TypeScript indents consistently, is mindful of when our code spans across different lines of code, and tries to keep comments around
+  The compiler tries to emit clean readable code that looks like something a person would write. While that’s not always so easy, TypeScript indents consistently, is mindful of when our code spans across different lines of code, and tries to keep comments around.
 
 - What if we get errors how it look.Now lets rewrite the above code
   
@@ -183,3 +184,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
 
    iii. **alwaysStrict**
       Enabling this flag ensures that TypeScript emits strict mode directives ('use strict';) in all emitted JavaScript files, promoting better interoperability with modern JavaScript environments.
+
+
+# Everyday Types
+
