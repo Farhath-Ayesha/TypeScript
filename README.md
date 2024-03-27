@@ -325,3 +325,54 @@ TypeScript tries to automatically infer the types in your code. For example, the
   let type = 'tiger';
   // No type annotation needed -- 'type' inferred as type 'string'
 ```
+
+### 4. Functions
+
+In TypeScript, we can define functions just like how we do in JavaScript, but with the added benefit of type annotations for parameters and return values. Here's how we can define different types of functions in TypeScript:
+
+**i. Parameter Type Annotations**
+we can annotate the types of function parameters to specify the types of values that should be passed to the function. This helps catch type errors early. Parameter type annotations are written after the parameter name, separated by a colon :.
+
+```
+   function greet(name: string, age: number){
+      console.log(`Hello ${name}, your age  is ${age}`);
+   }
+
+   greet('farhath', 23);
+```
+
+When a parameter has a type annotation, arguments to that function will be checked. From the above the first argument is string so it will check if the value is string or not. If not it will show error.
+
+- Even if you don’t have type annotations on your parameters, TypeScript will still check that you passed the right number of arguments.
+
+**ii. Return Type Annotations**
+
+we can also add return type annotations. Return type annotations appear after the parameter list
+
+```
+   function greet2(): string{
+      return('Hello farhath');
+   }
+
+   console.log(greet2());
+```
+**iii.Anonymous Functions**
+
+
+Anonymous functions, also known as function expressions, are functions that are defined without a name. They are often used when you need to pass a function as an argument to another function, or when we want to define a function inline without explicitly naming it. In TypeScript, we can define anonymous functions using the function keyword or arrow (=>) syntax.
+
+```
+   const greet4 = function(name: string) {
+      console.log(`Hello, ${name}!`);
+   };
+   greet4('ayesha');
+```
+Similarly, if we have an arrow function expression:
+
+```
+   const greet = (name: string) => {
+   console.log(`Hello, ${name}!`);
+   };
+
+   greet("farhath");
+```

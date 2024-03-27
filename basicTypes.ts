@@ -45,11 +45,11 @@ console.log(myAge());
 let kk:number;
 kk=1;
 
-function greet(name: string, age: number){
+function greet1(name: string, age: number){
     console.log(`Hello ${name}, your age  is ${age}`);
 }
 
-greet('farhath', 23);
+greet1('farhath', 23);
 
 // implicit typing
 
