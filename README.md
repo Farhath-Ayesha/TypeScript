@@ -15,7 +15,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
 1. **Static type-checking:** 
     Static types systems describe the shapes and behaviors of what our values will be when we run our programs. A type-checker like TypeScript uses that information and tells us when things might be going wrong.
 
-   ```bash
+   ```
             const flower = 'rose'
             flower(); 
    ```
@@ -111,6 +111,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
   TypeScript is telling us we forgot to pass an argument to the greet function.
 
 5. **Explicit Types**
+   
     When we use explicit typing, we are telling TS exactly what type we expect the variable to be and TS will take that type only.
 
     ```bash
@@ -128,6 +129,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
    Error: "Argument of type 'string' is not assignable to parameter of type 'number'". Here the second argument should pass with type of number as we define it as number type.
 
 6. **Implicit Type** 
+   
    It infer the type of variable bases on its initialization value.
    ```bash
     let myNumber = 42;
@@ -136,6 +138,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
    But it can sometimes lead to unexpected type errors if the inferred type is not what intended.
 
 7. **Erased Types**
+   
     An "erased type" typically refers to a situation where type information is intentionally removed or ignored during compilation or runtime. 
 
     ```bash
