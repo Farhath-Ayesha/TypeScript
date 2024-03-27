@@ -292,7 +292,7 @@ Examples:
 
       let fruits4: Array<string> = ['Apple', 'Orange', 'Banana']; 
 
-      // lastIndexof
+      // indexof
       console.log(fruits4.indexOf('Banana')); 
 
       // Extract a section of the array and return the new array
