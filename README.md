@@ -248,3 +248,57 @@ Non-primitive data types can hold more collections of complex values.
 
 The array elements can be accessed using the index of an element ArrayName[index]. The array index starts from zero, so the index of the first element is zero, the index of the second element is one and so on.
 
+  ```
+   let fruits2: string[] = ['Apple', 'Orange', 'Banana']; 
+   console.log(fruits2[0],fruits2[1],fruits2[2]);
+  ```
+
+**Array Methods**
+
+| Method       | Description                                                                       |
+|----------    |---------------------------------------------------------------------------------------|
+| pop()        | Removes the last element of the array and returns that element.                       |
+| push()       | Adds new elements to the array and returns the new array length.                      |
+| sort()       | Sorts all the elements of the array.                                                  |
+| concat()     | Joins two arrays and returns the combined result.                                     |
+| indexOf()    | Returns the index of the first match of a value in the array (-1 if not found).       |
+| lastIndexOf()| Returns the last index of an element in the array.                                    |
+| slice()      | Extracts a section of the array and returns the new array.                            |
+| toString()   | Returns a string representation of the array.                                         |
+
+Examples:
+   
+   ```
+      let fruits3: Array<string> = ['Apple', 'Orange', 'Banana']; 
+
+      // Sort
+
+      console.log(fruits3.sort()); // Output: [ 'Apple', 'Banana', 'Orange' ]
+
+      // pop
+      console.log(fruits3.pop()); // Output: Orange
+
+      // push
+      
+      console.log(fruits3.push('Papaya')); // 3
+      console.log(fruits3);   //Output: ['Apple', 'Banana', 'Papaya']
+      // Concatenate
+
+      console.log(fruits3.concat(['Fig', 'Mango'])); // Output: ['Apple', 'Banana', 'Papaya', 'Fig', 'Mango'] 
+
+      // indexOf
+      console.log(fruits3.indexOf('Apple'));// Output: 0
+    ```
+
+    ```
+     let fruits4: Array<string> = ['Apple', 'Orange', 'Banana']; 
+      
+      // lastIndexof
+       console.log(fruits4.indexOf('Banana')); // Output: 2
+
+      // Extract a section of the array and return the new array
+      console.log(fruits4.slice(1)); // Output: ['Orange', 'Banana']
+
+      // Convert the array to a string
+      console.log(fruits4.toString()); // Output: 'Apple,Orange,Banana'
+   ```
