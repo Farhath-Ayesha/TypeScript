@@ -17,13 +17,13 @@ TypeScript is an open-source programming language developed and maintained by Mi
 
 - TypeScript is nothing but JavaScript and some additional features i.e. ES6 features. It may not be supported in your target browser but the TypeScript compiler can compile the .ts files into ES3, ES4, and ES5 also. 
 
-# The Basics
+## The Basics
 
 ### 1. Static type-checking:
-   
+    
     Static types systems describe the shapes and behaviors of what our values will be when we run our programs. A type-checker like TypeScript uses that information and tells us when things might be going wrong.
 
-   ```
+   ```bash
          const flower = 'rose'
          flower(); 
    ```
