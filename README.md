@@ -286,9 +286,9 @@ Examples:
 
       // indexOf
       console.log(fruits3.indexOf('Apple'));
-    ```
+ ```
 
-    ```bash
+ ```bash
 
       let fruits4: Array<string> = ['Apple', 'Orange', 'Banana']; 
 
@@ -300,4 +300,4 @@ Examples:
 
       // Convert the array to a string
       console.log(fruits4.toString()); 
-      ```
+ ```
