@@ -26,17 +26,6 @@ console.log(fruits2[0],fruits2[1],fruits2[2]);
 //Array Methods
 let fruits3: Array<string> = ['Apple', 'Orange', 'Banana']; 
 
-// // lastIndexof
-
-// console.log(fruits3.indexOf('Banana')); // Output: 2
-
-// // Extract a section of the array and return the new array
-// console.log(fruits3.slice(1)); // Output: ['Orange', 'Banana']
-
-// // Convert the array to a string
-// console.log(fruits3.toString()); // Output: 'Apple,Orange,Banana'
-
-
 // Sort
 console.log(fruits3.sort()); 
 

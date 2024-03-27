@@ -16,27 +16,21 @@ var fruits2 = ['Apple', 'Orange', 'Banana'];
 console.log(fruits2[0], fruits2[1], fruits2[2]);
 //Array Methods
 var fruits3 = ['Apple', 'Orange', 'Banana'];
-// // lastIndexof
-// console.log(fruits3.indexOf('Banana')); // Output: 2
-// // Extract a section of the array and return the new array
-// console.log(fruits3.slice(1)); // Output: ['Orange', 'Banana']
-// // Convert the array to a string
-// console.log(fruits3.toString()); // Output: 'Apple,Orange,Banana'
 // Sort
-console.log(fruits3.sort()); // Output: [ 'Apple', 'Banana', 'Orange' ]
+console.log(fruits3.sort());
 // pop
-console.log(fruits3.pop()); // Output: Orange
+console.log(fruits3.pop());
 // push
-console.log(fruits3.push('Papaya')); // Output: ['Apple', 'Banana', 'Papaya']
+console.log(fruits3.push('Papaya'));
 console.log(fruits3);
 // Concatenate
-console.log(fruits3.concat(['Fig', 'Mango'])); // Output: ['Apple', 'Banana', 'Papaya', 'Fig', 'Mango'] 
+console.log(fruits3.concat(['Fig', 'Mango']));
 // indexOf
-console.log(fruits3.indexOf('Apple')); // Output: 0
+console.log(fruits3.indexOf('Apple'));
 var fruits4 = ['Apple', 'Orange', 'Banana'];
 // lastIndexof
-console.log(fruits4.indexOf('Banana')); // Output: 2
+console.log(fruits4.indexOf('Banana'));
 // Extract a section of the array and return the new array
-console.log(fruits4.slice(1)); // Output: ['Orange', 'Banana']
+console.log(fruits4.slice(1));
 // Convert the array to a string
-console.log(fruits4.toString()); // Output: 'Apple,Orange,Banana'
+console.log(fruits4.toString());
