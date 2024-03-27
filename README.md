@@ -1,3 +1,10 @@
+#                       TypeScript               
+
+## Chapters
+- Introduction
+- The Basics
+- Everyday Types
+
 # Intro to TypeScript
 
 TypeScript is an open-source programming language developed and maintained by Microsoft. It is a statically typed superset of JavaScript that compiles to plain JavaScript. TypeScript adds optional static typing to JavaScript, which allows to catch type-related errors at compile time rather than at runtime. 
