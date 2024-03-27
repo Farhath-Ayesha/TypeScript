@@ -272,33 +272,32 @@ Examples:
       let fruits3: Array<string> = ['Apple', 'Orange', 'Banana']; 
 
       // Sort
-
-      console.log(fruits3.sort()); // Output: [ 'Apple', 'Banana', 'Orange' ]
+      console.log(fruits3.sort()); 
 
       // pop
-      console.log(fruits3.pop()); // Output: Orange
+      console.log(fruits3.pop()); 
 
       // push
-      
-      console.log(fruits3.push('Papaya')); // 3
-      console.log(fruits3);   //Output: ['Apple', 'Banana', 'Papaya']
-      // Concatenate
+      console.log(fruits3.push('Papaya')); 
+      console.log(fruits3);
 
-      console.log(fruits3.concat(['Fig', 'Mango'])); // Output: ['Apple', 'Banana', 'Papaya', 'Fig', 'Mango'] 
+      // Concatenate
+      console.log(fruits3.concat(['Fig', 'Mango']));  
 
       // indexOf
-      console.log(fruits3.indexOf('Apple'));// Output: 0
+      console.log(fruits3.indexOf('Apple'));
     ```
 
-    ```
-     let fruits4: Array<string> = ['Apple', 'Orange', 'Banana']; 
-      
+    ```bash
+
+      let fruits4: Array<string> = ['Apple', 'Orange', 'Banana']; 
+
       // lastIndexof
-       console.log(fruits4.indexOf('Banana')); // Output: 2
+      console.log(fruits4.indexOf('Banana')); 
 
       // Extract a section of the array and return the new array
-      console.log(fruits4.slice(1)); // Output: ['Orange', 'Banana']
+      console.log(fruits4.slice(1)); 
 
       // Convert the array to a string
-      console.log(fruits4.toString()); // Output: 'Apple,Orange,Banana'
-   ```
+      console.log(fruits4.toString()); 
+      ```
