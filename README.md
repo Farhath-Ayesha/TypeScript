@@ -21,7 +21,7 @@ TypeScript is an open-source programming language developed and maintained by Mi
 
 ### 1. Static type-checking:
     
-    Static types systems describe the shapes and behaviors of what our values will be when we run our programs. A type-checker like TypeScript uses that information and tells us when things might be going wrong.
+Static types systems describe the shapes and behaviors of what our values will be when we run our programs. A type-checker like TypeScript uses that information and tells us when things might be going wrong.
 
    ```bash
          const flower = 'rose'
