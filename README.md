@@ -284,7 +284,12 @@ Examples:
       // indexOf
       console.log(fruits3.indexOf('Apple')); // Output: 0
  ```
-
+ ```
+   //lastIndexOf 
+    let string ='tiger';
+    let str='g';
+    console.log('lastindexof:' ,string.lastIndexOf(str));
+ ```
  ```
       let fruits4: Array<string> = ['Apple', 'Orange', 'Banana']; 
 
